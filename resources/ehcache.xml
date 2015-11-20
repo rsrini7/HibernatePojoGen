@@ -1,0 +1,91 @@
+<ehcache>
+
+  <!--
+    Sets the path to the directory where cache files are created.
+
+    If the path is a Java System Property it is replaced by its value in the
+    running VM.
+
+    The following properties are translated:
+    * user.home - User's home directory
+    * user.dir - User's current working directory
+    * java.io.tmpdir - Default temp file path
+
+    Subdirectories can be specified below the property e.g. java.io.tmpdir/one
+    -->
+    <diskStore path="java.io.tmpdir"/>
+
+ <!--
+    Mandatory Default Cache configuration. These settings will be applied to caches
+    created programmtically using CacheManager.add(String cacheName)
+    -->
+    <defaultCache
+            maxElementsInMemory="1000"
+            eternal="false"
+            timeToIdleSeconds="300"
+            timeToLiveSeconds="300"
+            overflowToDisk="false"
+            diskPersistent="false"
+            diskExpiryThreadIntervalSeconds="300"
+            />
+
+
+<!-- The unnamed query cache -->
+<cache
+    name="org.hibernate.cache.StandardQueryCache"
+    maxElementsInMemory="1000"
+    eternal="false"
+    timeToLiveSeconds="300"
+    overflowToDisk="false"
+/>
+    
+<cache
+    name="com.srini.hibpojogen.protein_tracker.model.obj.proteinTracker.Goalalert"
+    maxElementsInMemory="5000"
+    eternal="false"
+    timeToIdleSeconds="300"
+    timeToLiveSeconds="600"
+    overflowToDisk="false"
+/>
+<cache
+    name="com.srini.hibpojogen.protein_tracker.model.obj.proteinTracker.Proteindata"
+    maxElementsInMemory="5000"
+    eternal="false"
+    timeToIdleSeconds="300"
+    timeToLiveSeconds="600"
+    overflowToDisk="false"
+/>
+<cache
+    name="com.srini.hibpojogen.protein_tracker.model.obj.proteinTracker.UserGoalalert"
+    maxElementsInMemory="5000"
+    eternal="false"
+    timeToIdleSeconds="300"
+    timeToLiveSeconds="600"
+    overflowToDisk="false"
+/>
+<cache
+    name="com.srini.hibpojogen.protein_tracker.model.obj.proteinTracker.UserGoalalertPK"
+    maxElementsInMemory="5000"
+    eternal="false"
+    timeToIdleSeconds="300"
+    timeToLiveSeconds="600"
+    overflowToDisk="false"
+/>
+<cache
+    name="com.srini.hibpojogen.protein_tracker.model.obj.proteinTracker.Userhistory"
+    maxElementsInMemory="5000"
+    eternal="false"
+    timeToIdleSeconds="300"
+    timeToLiveSeconds="600"
+    overflowToDisk="false"
+/>
+<cache
+    name="com.srini.hibpojogen.protein_tracker.model.obj.proteinTracker.Users"
+    maxElementsInMemory="5000"
+    eternal="false"
+    timeToIdleSeconds="300"
+    timeToLiveSeconds="600"
+    overflowToDisk="false"
+/>
+
+</ehcache>

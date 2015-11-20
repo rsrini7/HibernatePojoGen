@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<appconfig>
+	<dbType>MYSQL</dbType>
+	<driver>com.mysql.jdbc.Driver</driver>
+  	<jdbcConnectionString>jdbc:mysql://127.0.0.1/protein_tracker</jdbcConnectionString>
+	<databaseIP>localhost</databaseIP>
+	<databaseCatalog></databaseCatalog>
+	<databaseUsername>root</databaseUsername>
+	<databasePassword></databasePassword>
+	<sourceTarget>D:/Workspaces/HibernateWS/HibernatePojoGen</sourceTarget>
+	<projectName>protein_tracker</projectName>
+	<topLevel>com.srini.hibpojogen</topLevel>
+	<libPath>libs</libPath>
+	<schemaStrategy>PARTIAL</schemaStrategy>
+</appconfig>

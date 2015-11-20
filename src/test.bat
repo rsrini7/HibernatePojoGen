@@ -1,0 +1,1 @@
+java -cp ../libs/*;./protein_tracker.jar org.junit.runner.JUnitCore com.srini.hibpojogen.DAOIntegrationTest
